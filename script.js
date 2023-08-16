@@ -1,1 +1,1 @@
-console.log("hello");
+$(".drag").draggable({ stack: "div"});

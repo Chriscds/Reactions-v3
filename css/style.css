@@ -15,8 +15,53 @@ html, body {
   width: 100vw;
   border: 2px solid black; }
 
+.drag {
+  position: absolute;
+  width: 400px;
+  height: 280px;
+  border-radius: 2em;
+  margin: 1em;
+  background: linear-gradient(-35deg, rgba(17, 17, 17, 0.55) 0%, rgba(34, 34, 34, 0.55) 100%);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px); }
+  .drag:nth-child(1) {
+    top: 240px;
+    left: 5px; }
+  .drag:nth-child(2) {
+    top: 240px;
+    left: 430px; }
+  .drag:nth-child(3) {
+    top: 240px;
+    left: 900px; }
+  .drag::before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 98.5%;
+    height: 98.5%;
+    border: 2px solid rgba(0, 0, 0, 0.05);
+    border-radius: 1.988em;
+    content: ""; }
+  .drag.item-2 {
+    backdrop-filter: blur(7px);
+    background: linear-gradient(-35deg, rgba(238, 238, 238, 0.55) 0%, rgba(255, 255, 255, 0.55) 100%);
+    color: black; }
+  .drag.item-3 {
+    backdrop-filter: blur(7px);
+    background: linear-gradient(-35deg, rgba(153, 80, 80, 0.55) 0%, rgba(241, 182, 182, 0.55) 100%);
+    color: black; }
+  .drag .img-1 {
+    max-height: 120px !important;
+    width: 400px; }
+  .drag .img-2 {
+    max-height: 230px;
+    max-width: 400px; }
+  .drag .img-3 {
+    max-height: 230px;
+    max-width: 400px; }
+
 .main-board {
   background-image: url("../assets/cork-background.jpg");
-  background-position: center;
   height: 70vh;
   width: 100vw; }
