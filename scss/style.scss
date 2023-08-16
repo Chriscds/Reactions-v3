@@ -1,3 +1,20 @@
-body {
-    background-color: rgb(36, 61, 172);
+html, body {
+    height: 100%;
+}
+
+.load-board {
+    background-image: url("../assets/cork-background.jpg");
+    background-size: cover;
+	background-position: center;
+    height: 30vh;
+    width: 100%vw;
+    border: 2px solid black;
+}
+
+.main-board {
+    background-image: url("../assets/cork-background.jpg");
+    background-size: cover;
+	background-position: center;
+    height: 70vh;
+    width: 100%vw;
 }
