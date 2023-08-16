@@ -12,8 +12,7 @@ html, body {
 .load-board {
   background-image: url("../assets/cork-background.jpg");
   height: 30vh;
-  width: 100vw;
-  border: 2px solid black; }
+  width: 100vw; }
 
 .drag {
   position: absolute;
@@ -21,18 +20,21 @@ html, body {
   height: 280px;
   border-radius: 2em;
   margin: 1em;
-  background: linear-gradient(-35deg, rgba(17, 17, 17, 0.55) 0%, rgba(34, 34, 34, 0.55) 100%);
+  background: linear-gradient(-35deg, rgba(17, 17, 17, 0.9) 0%, rgba(34, 34, 34, 0.9) 100%);
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
   backdrop-filter: blur(10px); }
   .drag:nth-child(1) {
     top: 240px;
-    left: 5px; }
+    left: 20px;
+    rotate: -5deg; }
   .drag:nth-child(2) {
     top: 240px;
-    left: 430px; }
+    left: 30px;
+    rotate: -20deg; }
   .drag:nth-child(3) {
     top: 240px;
-    left: 900px; }
+    left: 30px;
+    rotate: 20deg; }
   .drag::before {
     position: absolute;
     top: 50%;
@@ -49,7 +51,7 @@ html, body {
     color: black; }
   .drag.item-3 {
     backdrop-filter: blur(7px);
-    background: linear-gradient(-35deg, rgba(153, 80, 80, 0.55) 0%, rgba(241, 182, 182, 0.55) 100%);
+    background: linear-gradient(-35deg, rgba(153, 80, 80, 0.8) 0%, rgba(241, 182, 182, 0.8) 100%);
     color: black; }
   .drag .img-1 {
     max-height: 120px !important;
