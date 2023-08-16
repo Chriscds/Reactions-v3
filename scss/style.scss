@@ -2,19 +2,31 @@ html, body {
     height: 100%;
 }
 
+.navbar {
+    display: flex;
+    align-items: center;
+    padding: 30px;
+}
+
+.logo {
+    margin-left: 10%;
+    // height: 10px;
+    // margin-bottom: 80px;
+}
+
 .load-board {
     background-image: url("../assets/cork-background.jpg");
-    background-size: cover;
-	background-position: center;
+    // background-size: cover;
+	// background-position: center;
     height: 30vh;
-    width: 100%vw;
+    width: 100vw;
     border: 2px solid black;
 }
 
 .main-board {
     background-image: url("../assets/cork-background.jpg");
-    background-size: cover;
+    // background-size: cover;
 	background-position: center;
     height: 70vh;
-    width: 100%vw;
+    width: 100vw;
 }
