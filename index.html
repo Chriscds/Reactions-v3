@@ -13,47 +13,24 @@
     <title>Reactions v3</title>
 </head>
 <body>
-    <!-- <nav class="navbar">
-        <figure class="logo">
-            <img src="assets/brand-logo.png" alt="reactions logo">
-        </figure>
-   
-        <div>search bar</div>
-        <div>-</div>
-     
-        <div>widgets</div>
-        <div>-</div>
-        
-        <div>uploads button </div>
-
-    </nav> -->
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
           <a class="navbar-brand" class="logo" href="#">
             <img src="assets/brand-logo.png" alt="reactions logo">
           </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navHamburgerToggle" aria-controls="navHamburgerToggle" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-            <!-- <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-              </li>
-            </ul> -->
+          <div class="collapse navbar-collapse" id="navHamburgerToggle">
             <form class="d-flex" role="search">
               <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
               <button class="btn btn-outline-success" type="submit">Search</button>
+<!-- TODO: Create api function to search Upsplash on serarch -->
             </form>
-            <button type="button" class="btn btn-lg rounded-pill" id="widget-button">Widgets</button>
+            <button type="button" class="btn btn-lg rounded-pill" id="widget-button">+ Widgets</button>
             <button type="button" class="btn btn-lg rounded-pill upload-button">Upload</button>
+<!-- TODO: Create upload function for image files from local source -->
           </div>
         </div>
       </nav>
