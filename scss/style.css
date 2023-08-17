@@ -1,0 +1,115 @@
+html, body {
+  height: 100%;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  padding: 30px;
+}
+
+.logo {
+  margin-left: 10%;
+}
+
+#widget-button {
+  background-color: #A2A0FF !important;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  color: white !important;
+  transition: all 0.3s ease-in-out;
+}
+
+#widget-button:hover {
+  transform: scale(0.8);
+  background-color: #A2A0FF !important;
+  color: white !important;
+}
+
+.upload-button {
+  background-color: #000000;
+  color: white;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transition: all 0.3s ease-in-out;
+  padding: 0.6em 0.8em 0.8em 0.8em;
+  border: 0;
+}
+
+.upload-button:hover {
+  transform: scale(0.8);
+  background-color: #000000 !important;
+  color: white !important;
+}
+
+.load-board {
+  background-image: url("../assets/cork-background.jpg");
+  height: 30vh;
+  width: 100vw;
+}
+
+.drag {
+  position: absolute;
+  width: 400px;
+  height: 280px;
+  border-radius: 2em;
+  margin: 1em;
+  background: linear-gradient(-35deg, rgba(17, 17, 17, 0.9) 0%, rgba(34, 34, 34, 0.9) 100%);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+}
+.drag:nth-child(1) {
+  top: 240px;
+  left: 20px;
+  rotate: -5deg;
+}
+.drag:nth-child(2) {
+  top: 240px;
+  left: 30px;
+  rotate: -20deg;
+}
+.drag:nth-child(3) {
+  top: 240px;
+  left: 30px;
+  rotate: 20deg;
+}
+.drag::before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 98.5%;
+  height: 98.5%;
+  border: 2px solid rgba(0, 0, 0, 0.05);
+  border-radius: 1.988em;
+  content: "";
+}
+.drag.item-2 {
+  -webkit-backdrop-filter: blur(7px);
+          backdrop-filter: blur(7px);
+  background: linear-gradient(-35deg, rgba(238, 238, 238, 0.55) 0%, rgba(255, 255, 255, 0.55) 100%);
+  color: black;
+}
+.drag.item-3 {
+  -webkit-backdrop-filter: blur(7px);
+          backdrop-filter: blur(7px);
+  background: linear-gradient(-35deg, rgba(153, 80, 80, 0.8) 0%, rgba(241, 182, 182, 0.8) 100%);
+  color: black;
+}
+.drag .img-1 {
+  max-height: 120px !important;
+  width: 400px;
+}
+.drag .img-2 {
+  max-height: 230px;
+  max-width: 400px;
+}
+.drag .img-3 {
+  max-height: 230px;
+  max-width: 400px;
+}
+
+.main-board {
+  background-image: url("../assets/cork-background.jpg");
+  height: 70vh;
+  width: 100vw;
+}/*# sourceMappingURL=style.css.map */

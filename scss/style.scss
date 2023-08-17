@@ -13,6 +13,34 @@ html, body {
     // height: 10px;
     // margin-bottom: 80px;
 }
+// TODO: fix colors and hover
+#widget-button  {
+	background-color: #A2A0FF !important;
+	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	color: white !important;
+	// cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+#widget-button:hover {
+	transform: scale(0.8);
+	background-color: #A2A0FF !important;
+    color: white !important;
+}
+// TODO: fix colors and hover
+.upload-button {
+	background-color: #000000;
+    color: white;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    // cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    padding: 0.6em 0.8em 0.8em 0.8em;
+    border: 0;
+}
+.upload-button:hover {
+	transform: scale(0.8);
+    background-color: #000000 !important;
+    color: white !important;
+}
 
 .load-board {
     background-image: url("../assets/cork-background.jpg");
